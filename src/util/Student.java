@@ -29,7 +29,7 @@ public class Student implements CSVPrintable {
 
     @Override
     public void csvPrintln(PrintWriter out) {
-        String[] names = name.split(",");
+        String[] names = name.split(","); // splits the name at the comma and then gets put back together with a space in its place.
         out.printf("%s %s,%d,%d\n", names[0], names[1], id, phone);
     }
 }
