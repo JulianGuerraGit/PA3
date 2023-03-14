@@ -62,6 +62,8 @@ public class Main {
         Scanner scanner = new Scanner(System.in);   // initializes the input scanner.
         CSVPrintable person; // creates an empty person object.
 
+        p.println("Name,ID,Phone");
+
         System.out.println("Please enter number of people: ");
         String input = scanner.nextLine();                                // stores the input
         while (!input.matches("^[0-9]+$") || input.equals("0")) {   // checks if the input is numeric and >0 and loops if not.
